@@ -1,0 +1,147 @@
+<html>
+<head></head>
+<body>
+    <div id="canvas">
+        <div id="sidebar">
+            <h2>COVID-19 en Cataluña</h2>
+            <div id="footer"> <b>Diseñado por Alejandro Lendínez</b>    
+                <br> <br>   <b>Fuentes:</b> Dades Obertes de Catalunya, CARTO    
+                <br> <br>   <b>Fecha:</b>  23/06/2023 <br> <br> </div>
+
+            <div class="accordion"><a href="totales-casos.html">Totales</a></div>
+            
+            <div class="panel">
+                <ul>
+                    <li><a href="totales-casos.html">Casos</a></li>
+                    <li><a href="totales-pcr.html">PCR</a></li>
+                    <li><a href="totales-ingresos.html">Ingresos</a></li>
+                    <li><a href="totales-muertes.html">Muertes</a></li>
+                </ul>
+            </div>
+
+            <div class="accordion"><a href="evolucion.html">Evolución</a></div>
+        </div>
+        <div id="content">
+            <div id="info">
+                PCR totales al final de la pandémia desglosados por comarca, grupo de edad y género
+            </div>
+            <div id="graphs">
+                <!-- Mapa -->
+                <div class="map-container">
+                    <div class="flourish-embed flourish-map" data-src="visualisation/14249666"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                </div>
+                <!-- Extra -->
+                <div class="graph-container">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/14249601"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<style>
+    body {
+        margin: 0px;
+        background: #222222;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #canvas {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;
+    }
+    #sidebar {
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        
+    }
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    #info {
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+    #graphs {
+        display: flex;
+        width: 100%;
+    }
+    .map-container {
+        width: 800px;
+    }
+    .graph-container {
+        width: 100%;
+        height: 530px;
+        overflow-y: scroll;
+    }
+    #footer {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .flourish-credit {
+        visibility: hidden;
+    }
+
+    .flourish-embed {
+        align-items: stretch;
+    }
+
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 5px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .panel {
+        text-align: left;
+    }
+
+    .panel a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .panel a:hover{
+        color: orange;
+        transition: 0.2s;
+    }
+
+    .accordion a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .accordion a:hover{
+        color: orange;
+        transition: 0.2s;
+    }
+
+</style>
+
+</html>
